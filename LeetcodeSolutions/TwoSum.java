@@ -4,7 +4,7 @@ Given an array of integers nums and an integer target, return indices of the two
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.*/
 
-class TwoSum {
+class Solution {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         for(int i = 0; i < nums.length - 1 ;i++){
@@ -14,8 +14,8 @@ class TwoSum {
                     result[1] = j;
                     break;
                 }
+                }
             }
-        }
-        return result;
+            return result;
+        } 
     }
-}
